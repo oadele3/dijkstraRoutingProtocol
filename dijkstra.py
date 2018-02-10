@@ -22,6 +22,7 @@ import networkx
 from pyroute2 import IPRoute
 
 MY_LOCK = threading.Lock()
+#global lock
 
 class myThread (threading.Thread):
   noOfThreads=0
