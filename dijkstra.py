@@ -27,6 +27,7 @@ MY_LOCK = threading.Lock()
 class myThread (threading.Thread):
   noOfThreads=0
   threadlist = []
+	
   def __init__(self, targetMethod, name=None, arg1=None ):
     print "16 - entering new thread __init__ "
     threading.Thread.__init__(self,target=targetMethod, args=(arg1,))
